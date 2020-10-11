@@ -9,7 +9,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
     // Parse application/json
 app.use(bodyParser.json())
 
-
 app.get('/', function(req, res) {
     res.json('Hello Wold');
 })
