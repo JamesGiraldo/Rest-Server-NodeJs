@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const colors = require('colors');
 const app = express();
 const bodyParser = require('body-parser');
+const path = require('path');
 
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -11,6 +12,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // Parse application/json
 app.use(bodyParser.json())
 
+// habilitar la carpeta public
+app.use(express.static(path.resolve(__dirname, '../public')));
+
+// Configurar global de rutas
 app.use(require('./routes/index'));
 
 mongoose.connect(process.env.URLDB, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }, (err, res) => {
