@@ -11,13 +11,13 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // Parse application/json
 app.use(bodyParser.json())
 
-app.use(require('./routes/usuario'));
+app.use(require('./routes/index'));
 
 mongoose.connect(process.env.URLDB, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }, (err, res) => {
     if (err) throw err;
-    console.log(`Base de Datos`.blue, `ONLINE`.green, `!!!`.red);
+    console.log(`Base de Datos ONLINE`.green, `!!!`.yellow);
 });
 
 app.listen(process.env.PORT, () => {
-    console.log(`Escuchando en el puerto:`.yellow, `${ process.env.PORT }`.blue);
+    console.log(`Escuchando en el puerto:`.magenta, `${ process.env.PORT }`.cyan);
 });
