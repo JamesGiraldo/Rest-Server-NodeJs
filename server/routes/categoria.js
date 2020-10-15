@@ -10,10 +10,14 @@ let { verificaToken, verificaRol } = require('../middlerwares/autentificacion');
 app.get('/categorias', verificaToken, (req, res) => {
     // buscar todas las categorias
     Categoria.find({})
+        // organizar
+        .sort('nombre')
+        // revisar que el ID que existe en la categoria que se solicita y permite cargar la información ((populate))
+        .populate('Usuario', 'nombre email')
         .exec((err, categorias) => {
             // para manejar el error si no sale
             if (err) {
-                return res.status(400).json({
+                return res.status(500).json({
                     ok: false,
                     err: {
                         message: 'Problemas al cargar todos los registros de categorias'
@@ -30,9 +34,9 @@ app.get('/categorias', verificaToken, (req, res) => {
             });
         })
 });
-// =====================
-// Mostrar una categorias por ID
-// =====================
+// ==============================
+// Mostrar una categoria por ID
+// ==============================
 app.get('/categoria/:id', verificaToken, (req, res) => {
     // obtener el ID de los parametros
     let id = req.params.id;
@@ -64,7 +68,7 @@ app.get('/categoria/:id', verificaToken, (req, res) => {
     });
 });
 // =====================
-// Crear una categorias
+// Crear una categoria
 // =====================
 app.post('/categoria', verificaToken, (req, res) => {
     // obtener lo que tiene el body
@@ -98,9 +102,9 @@ app.post('/categoria', verificaToken, (req, res) => {
     });
 });
 
-// =====================
-// Crear una categorias
-// =====================
+// =========================
+// Actualizar una categoria
+// =========================
 app.put('/categoria/:id', [verificaToken], (req, res) => {
     // obtener el ID de los parametros
     let id = req.params.id;
@@ -133,9 +137,9 @@ app.put('/categoria/:id', [verificaToken], (req, res) => {
     })
 });
 
-// =====================
-// Crear una categorias
-// =====================
+// ========================
+// Eliminar una categorias
+// ========================
 app.delete('/categoria/:id', [verificaToken, verificaRol], (req, res) => {
     // obtener el ID de los parametros
     let id = req.params.id;
