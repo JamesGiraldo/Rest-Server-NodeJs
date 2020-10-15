@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 const _ = require('underscore');
 const { verificaToken, verificaRol } = require('../middlerwares/autentificacion');
 
-app.get('/usuario', verificaToken, (req, res) => {
+app.get('/usuarios', verificaToken, (req, res) => {
 
     let desde = req.query.desde || 0;
     desde = Number(desde);
