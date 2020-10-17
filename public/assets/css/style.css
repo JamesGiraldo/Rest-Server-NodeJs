@@ -7,3 +7,29 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+.nada {
+    margin-bottom: 10%;
+}
+
+.ir-arriba {
+    display: none;
+    padding: 20px;
+    background: #fcae70;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    border-radius: 35px;
+    background: url('./img/Black-Goku.png');
+    background-size: cover;
+}
+
+.ir-arriba:hover {
+    border: 2px solid #fcae70;
+    -webkit-box-shadow: 13px 13px 31px -6px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 13px 13px 31px -6px rgba(0, 0, 0, 0.77);
+    box-shadow: 13px 13px 31px -6px rgba(0, 0, 0, 0.77);
+}

@@ -5,11 +5,11 @@ const { json } = require('body-parser');
 let app = express();
 const Usuario = require('../models/usuario');
 const Producto = require('../models/producto');
-let { verificaToken, verificaRol } = require('../middlerwares/autentificacion');
+let { verificaToken, verificaRol, verificaTokenImg } = require('../middlerwares/autentificacion');
 const fs = require('fs');
 const path = require('path');
 
-app.get('/imagen/:tipo/:img', (req, res) => {
+app.get('/imagen/:tipo/:img', verificaTokenImg, (req, res) => {
     let tipo = req.params.tipo;
     let img = req.params.img;
     let pathImagen = path.resolve(__dirname, `../../uploads/${ tipo }/${ img }`);

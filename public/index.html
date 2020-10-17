@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <span id="ir-arriba" class="ir-arriba"></span>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="/">NODEJS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,8 +34,119 @@
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <!-- <img src="http://localhost:3000/imagen/usuarios/5f87b14aa412cd1a19a892af-824.png?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkYTc4NjNlODYzN2Q2NjliYzJhMTI2MjJjZWRlMmE4ODEzZDExYjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyOTk1ODE4NzA5MjE1MDcwNzM0IiwiZW1haWwiOiJqYW1lc2dpaXJhbGRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaTcwSUg2NlFhcFAtRVAwR1RqYlJrZyIsIm5hbWUiOiJqYW1lcyBHaXJhbGRvIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoMURtZlFZQjd0QnhRSk1jdTRid1lqZHJFSUx6QWRUOFE5cEt0NEl3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImphbWVzIiwiZmFtaWx5X25hbWUiOiJHaXJhbGRvIiwibG9jYWxlIjoiZXMtNDE5IiwiaWF0IjoxNjAyOTEwNDM0LCJleHAiOjE2MDI5MTQwMzQsImp0aSI6IjA2M2I2Mjg0OTFiOWJjMjRkMTljNzY3NGY3OWE0MjhkZmFlMzMzNzMifQ.e1N-KyHbdEvc_xBdKXA4xm6qNGhRMVvAkgeB4o1Ct_1_DSKyREuJhsan4PKwEbznwBEYO0tD2jS7b5HWSDhOe5PkLb4m-3RoJsiURFUnQZXN2j8qk4UgYgQ_s-eLK0l8NgKL-pbzB5I0v932amyyGjh47kHSvLOOCTEj9oH5GWnQhraBxMgCMgcEBXdIBTF5hlqU9SfhJovtWlu4XzSQWOr2soYAJzLygrOdWFNOpe3c4xqMMVz_6jISpM3iAmIcLWTV0evzmxfKYgT379XDPNM2xLfzzKVuXmTzr4mVl9l-5tJ5oRpbJ_ZnOwF9cYiZG8pqji3r97BbpTVrPAchLA"
+                        class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <!-- <img src="http://localhost:3000/imagen/usuarios/5f87b14aa412cd1a19a892af-824.png?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkYTc4NjNlODYzN2Q2NjliYzJhMTI2MjJjZWRlMmE4ODEzZDExYjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyOTk1ODE4NzA5MjE1MDcwNzM0IiwiZW1haWwiOiJqYW1lc2dpaXJhbGRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaTcwSUg2NlFhcFAtRVAwR1RqYlJrZyIsIm5hbWUiOiJqYW1lcyBHaXJhbGRvIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoMURtZlFZQjd0QnhRSk1jdTRid1lqZHJFSUx6QWRUOFE5cEt0NEl3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImphbWVzIiwiZmFtaWx5X25hbWUiOiJHaXJhbGRvIiwibG9jYWxlIjoiZXMtNDE5IiwiaWF0IjoxNjAyOTEwNDM0LCJleHAiOjE2MDI5MTQwMzQsImp0aSI6IjA2M2I2Mjg0OTFiOWJjMjRkMTljNzY3NGY3OWE0MjhkZmFlMzMzNzMifQ.e1N-KyHbdEvc_xBdKXA4xm6qNGhRMVvAkgeB4o1Ct_1_DSKyREuJhsan4PKwEbznwBEYO0tD2jS7b5HWSDhOe5PkLb4m-3RoJsiURFUnQZXN2j8qk4UgYgQ_s-eLK0l8NgKL-pbzB5I0v932amyyGjh47kHSvLOOCTEj9oH5GWnQhraBxMgCMgcEBXdIBTF5hlqU9SfhJovtWlu4XzSQWOr2soYAJzLygrOdWFNOpe3c4xqMMVz_6jISpM3iAmIcLWTV0evzmxfKYgT379XDPNM2xLfzzKVuXmTzr4mVl9l-5tJ5oRpbJ_ZnOwF9cYiZG8pqji3r97BbpTVrPAchLA"
+                        class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <!-- <img src="http://localhost:3000/imagen/usuarios/5f87b14aa412cd1a19a892af-824.png?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkYTc4NjNlODYzN2Q2NjliYzJhMTI2MjJjZWRlMmE4ODEzZDExYjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyOTk1ODE4NzA5MjE1MDcwNzM0IiwiZW1haWwiOiJqYW1lc2dpaXJhbGRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaTcwSUg2NlFhcFAtRVAwR1RqYlJrZyIsIm5hbWUiOiJqYW1lcyBHaXJhbGRvIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoMURtZlFZQjd0QnhRSk1jdTRid1lqZHJFSUx6QWRUOFE5cEt0NEl3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImphbWVzIiwiZmFtaWx5X25hbWUiOiJHaXJhbGRvIiwibG9jYWxlIjoiZXMtNDE5IiwiaWF0IjoxNjAyOTEwNDM0LCJleHAiOjE2MDI5MTQwMzQsImp0aSI6IjA2M2I2Mjg0OTFiOWJjMjRkMTljNzY3NGY3OWE0MjhkZmFlMzMzNzMifQ.e1N-KyHbdEvc_xBdKXA4xm6qNGhRMVvAkgeB4o1Ct_1_DSKyREuJhsan4PKwEbznwBEYO0tD2jS7b5HWSDhOe5PkLb4m-3RoJsiURFUnQZXN2j8qk4UgYgQ_s-eLK0l8NgKL-pbzB5I0v932amyyGjh47kHSvLOOCTEj9oH5GWnQhraBxMgCMgcEBXdIBTF5hlqU9SfhJovtWlu4XzSQWOr2soYAJzLygrOdWFNOpe3c4xqMMVz_6jISpM3iAmIcLWTV0evzmxfKYgT379XDPNM2xLfzzKVuXmTzr4mVl9l-5tJ5oRpbJ_ZnOwF9cYiZG8pqji3r97BbpTVrPAchLA"
+                        class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron my-3 py-3">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        </div>
+        <div class="row py-3">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <!-- <img src="http://localhost:3000/imagen/usuarios/5f87b14aa412cd1a19a892af-824.png?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkYTc4NjNlODYzN2Q2NjliYzJhMTI2MjJjZWRlMmE4ODEzZDExYjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyOTk1ODE4NzA5MjE1MDcwNzM0IiwiZW1haWwiOiJqYW1lc2dpaXJhbGRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaTcwSUg2NlFhcFAtRVAwR1RqYlJrZyIsIm5hbWUiOiJqYW1lcyBHaXJhbGRvIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoMURtZlFZQjd0QnhRSk1jdTRid1lqZHJFSUx6QWRUOFE5cEt0NEl3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImphbWVzIiwiZmFtaWx5X25hbWUiOiJHaXJhbGRvIiwibG9jYWxlIjoiZXMtNDE5IiwiaWF0IjoxNjAyOTEwNDM0LCJleHAiOjE2MDI5MTQwMzQsImp0aSI6IjA2M2I2Mjg0OTFiOWJjMjRkMTljNzY3NGY3OWE0MjhkZmFlMzMzNzMifQ.e1N-KyHbdEvc_xBdKXA4xm6qNGhRMVvAkgeB4o1Ct_1_DSKyREuJhsan4PKwEbznwBEYO0tD2jS7b5HWSDhOe5PkLb4m-3RoJsiURFUnQZXN2j8qk4UgYgQ_s-eLK0l8NgKL-pbzB5I0v932amyyGjh47kHSvLOOCTEj9oH5GWnQhraBxMgCMgcEBXdIBTF5hlqU9SfhJovtWlu4XzSQWOr2soYAJzLygrOdWFNOpe3c4xqMMVz_6jISpM3iAmIcLWTV0evzmxfKYgT379XDPNM2xLfzzKVuXmTzr4mVl9l-5tJ5oRpbJ_ZnOwF9cYiZG8pqji3r97BbpTVrPAchLA"
+                        class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <!-- <img src="http://localhost:3000/imagen/usuarios/5f87b14aa412cd1a19a892af-824.png?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkYTc4NjNlODYzN2Q2NjliYzJhMTI2MjJjZWRlMmE4ODEzZDExYjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyOTk1ODE4NzA5MjE1MDcwNzM0IiwiZW1haWwiOiJqYW1lc2dpaXJhbGRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaTcwSUg2NlFhcFAtRVAwR1RqYlJrZyIsIm5hbWUiOiJqYW1lcyBHaXJhbGRvIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoMURtZlFZQjd0QnhRSk1jdTRid1lqZHJFSUx6QWRUOFE5cEt0NEl3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImphbWVzIiwiZmFtaWx5X25hbWUiOiJHaXJhbGRvIiwibG9jYWxlIjoiZXMtNDE5IiwiaWF0IjoxNjAyOTEwNDM0LCJleHAiOjE2MDI5MTQwMzQsImp0aSI6IjA2M2I2Mjg0OTFiOWJjMjRkMTljNzY3NGY3OWE0MjhkZmFlMzMzNzMifQ.e1N-KyHbdEvc_xBdKXA4xm6qNGhRMVvAkgeB4o1Ct_1_DSKyREuJhsan4PKwEbznwBEYO0tD2jS7b5HWSDhOe5PkLb4m-3RoJsiURFUnQZXN2j8qk4UgYgQ_s-eLK0l8NgKL-pbzB5I0v932amyyGjh47kHSvLOOCTEj9oH5GWnQhraBxMgCMgcEBXdIBTF5hlqU9SfhJovtWlu4XzSQWOr2soYAJzLygrOdWFNOpe3c4xqMMVz_6jISpM3iAmIcLWTV0evzmxfKYgT379XDPNM2xLfzzKVuXmTzr4mVl9l-5tJ5oRpbJ_ZnOwF9cYiZG8pqji3r97BbpTVrPAchLA"
+                        class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <!-- <img src="http://localhost:3000/imagen/usuarios/5f87b14aa412cd1a19a892af-824.png?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkYTc4NjNlODYzN2Q2NjliYzJhMTI2MjJjZWRlMmE4ODEzZDExYjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyOTk1ODE4NzA5MjE1MDcwNzM0IiwiZW1haWwiOiJqYW1lc2dpaXJhbGRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaTcwSUg2NlFhcFAtRVAwR1RqYlJrZyIsIm5hbWUiOiJqYW1lcyBHaXJhbGRvIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoMURtZlFZQjd0QnhRSk1jdTRid1lqZHJFSUx6QWRUOFE5cEt0NEl3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImphbWVzIiwiZmFtaWx5X25hbWUiOiJHaXJhbGRvIiwibG9jYWxlIjoiZXMtNDE5IiwiaWF0IjoxNjAyOTEwNDM0LCJleHAiOjE2MDI5MTQwMzQsImp0aSI6IjA2M2I2Mjg0OTFiOWJjMjRkMTljNzY3NGY3OWE0MjhkZmFlMzMzNzMifQ.e1N-KyHbdEvc_xBdKXA4xm6qNGhRMVvAkgeB4o1Ct_1_DSKyREuJhsan4PKwEbznwBEYO0tD2jS7b5HWSDhOe5PkLb4m-3RoJsiURFUnQZXN2j8qk4UgYgQ_s-eLK0l8NgKL-pbzB5I0v932amyyGjh47kHSvLOOCTEj9oH5GWnQhraBxMgCMgcEBXdIBTF5hlqU9SfhJovtWlu4XzSQWOr2soYAJzLygrOdWFNOpe3c4xqMMVz_6jISpM3iAmIcLWTV0evzmxfKYgT379XDPNM2xLfzzKVuXmTzr4mVl9l-5tJ5oRpbJ_ZnOwF9cYiZG8pqji3r97BbpTVrPAchLA"
+                        class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3 nada">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <!-- <img src="http://localhost:3000/imagen/usuarios/5f87b14aa412cd1a19a892af-824.png?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkYTc4NjNlODYzN2Q2NjliYzJhMTI2MjJjZWRlMmE4ODEzZDExYjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyOTk1ODE4NzA5MjE1MDcwNzM0IiwiZW1haWwiOiJqYW1lc2dpaXJhbGRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaTcwSUg2NlFhcFAtRVAwR1RqYlJrZyIsIm5hbWUiOiJqYW1lcyBHaXJhbGRvIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoMURtZlFZQjd0QnhRSk1jdTRid1lqZHJFSUx6QWRUOFE5cEt0NEl3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImphbWVzIiwiZmFtaWx5X25hbWUiOiJHaXJhbGRvIiwibG9jYWxlIjoiZXMtNDE5IiwiaWF0IjoxNjAyOTEwNDM0LCJleHAiOjE2MDI5MTQwMzQsImp0aSI6IjA2M2I2Mjg0OTFiOWJjMjRkMTljNzY3NGY3OWE0MjhkZmFlMzMzNzMifQ.e1N-KyHbdEvc_xBdKXA4xm6qNGhRMVvAkgeB4o1Ct_1_DSKyREuJhsan4PKwEbznwBEYO0tD2jS7b5HWSDhOe5PkLb4m-3RoJsiURFUnQZXN2j8qk4UgYgQ_s-eLK0l8NgKL-pbzB5I0v932amyyGjh47kHSvLOOCTEj9oH5GWnQhraBxMgCMgcEBXdIBTF5hlqU9SfhJovtWlu4XzSQWOr2soYAJzLygrOdWFNOpe3c4xqMMVz_6jISpM3iAmIcLWTV0evzmxfKYgT379XDPNM2xLfzzKVuXmTzr4mVl9l-5tJ5oRpbJ_ZnOwF9cYiZG8pqji3r97BbpTVrPAchLA"
+                        class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <!-- <img src="http://localhost:3000/imagen/usuarios/5f87b14aa412cd1a19a892af-824.png?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkYTc4NjNlODYzN2Q2NjliYzJhMTI2MjJjZWRlMmE4ODEzZDExYjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyOTk1ODE4NzA5MjE1MDcwNzM0IiwiZW1haWwiOiJqYW1lc2dpaXJhbGRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaTcwSUg2NlFhcFAtRVAwR1RqYlJrZyIsIm5hbWUiOiJqYW1lcyBHaXJhbGRvIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoMURtZlFZQjd0QnhRSk1jdTRid1lqZHJFSUx6QWRUOFE5cEt0NEl3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImphbWVzIiwiZmFtaWx5X25hbWUiOiJHaXJhbGRvIiwibG9jYWxlIjoiZXMtNDE5IiwiaWF0IjoxNjAyOTEwNDM0LCJleHAiOjE2MDI5MTQwMzQsImp0aSI6IjA2M2I2Mjg0OTFiOWJjMjRkMTljNzY3NGY3OWE0MjhkZmFlMzMzNzMifQ.e1N-KyHbdEvc_xBdKXA4xm6qNGhRMVvAkgeB4o1Ct_1_DSKyREuJhsan4PKwEbznwBEYO0tD2jS7b5HWSDhOe5PkLb4m-3RoJsiURFUnQZXN2j8qk4UgYgQ_s-eLK0l8NgKL-pbzB5I0v932amyyGjh47kHSvLOOCTEj9oH5GWnQhraBxMgCMgcEBXdIBTF5hlqU9SfhJovtWlu4XzSQWOr2soYAJzLygrOdWFNOpe3c4xqMMVz_6jISpM3iAmIcLWTV0evzmxfKYgT379XDPNM2xLfzzKVuXmTzr4mVl9l-5tJ5oRpbJ_ZnOwF9cYiZG8pqji3r97BbpTVrPAchLA"
+                        class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <!-- <img src="http://localhost:3000/imagen/usuarios/5f87b14aa412cd1a19a892af-824.png?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkYTc4NjNlODYzN2Q2NjliYzJhMTI2MjJjZWRlMmE4ODEzZDExYjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMzk5NzkxODE0MDk4LWVtcTJtbG1jcGxsNnFncWVmYXMzcGIwNnJsbHF2ZGVkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyOTk1ODE4NzA5MjE1MDcwNzM0IiwiZW1haWwiOiJqYW1lc2dpaXJhbGRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaTcwSUg2NlFhcFAtRVAwR1RqYlJrZyIsIm5hbWUiOiJqYW1lcyBHaXJhbGRvIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoMURtZlFZQjd0QnhRSk1jdTRid1lqZHJFSUx6QWRUOFE5cEt0NEl3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImphbWVzIiwiZmFtaWx5X25hbWUiOiJHaXJhbGRvIiwibG9jYWxlIjoiZXMtNDE5IiwiaWF0IjoxNjAyOTEwNDM0LCJleHAiOjE2MDI5MTQwMzQsImp0aSI6IjA2M2I2Mjg0OTFiOWJjMjRkMTljNzY3NGY3OWE0MjhkZmFlMzMzNzMifQ.e1N-KyHbdEvc_xBdKXA4xm6qNGhRMVvAkgeB4o1Ct_1_DSKyREuJhsan4PKwEbznwBEYO0tD2jS7b5HWSDhOe5PkLb4m-3RoJsiURFUnQZXN2j8qk4UgYgQ_s-eLK0l8NgKL-pbzB5I0v932amyyGjh47kHSvLOOCTEj9oH5GWnQhraBxMgCMgcEBXdIBTF5hlqU9SfhJovtWlu4XzSQWOr2soYAJzLygrOdWFNOpe3c4xqMMVz_6jISpM3iAmIcLWTV0evzmxfKYgT379XDPNM2xLfzzKVuXmTzr4mVl9l-5tJ5oRpbJ_ZnOwF9cYiZG8pqji3r97BbpTVrPAchLA"
+                        class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="">
+    <footer class="mt-5">
         James Giraldo -
         <span id="year"></span>
     </footer>
